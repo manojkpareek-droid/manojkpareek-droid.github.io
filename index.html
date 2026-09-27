@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Academic profile and writing of Dr. Manoj Pareek.">
+  <title>Dr. Manoj Pareek | Academic Profile</title>
+  <style>
+    :root {
+      --ink: #17242b;
+      --muted: #52636a;
+      --accent: #176b67;
+      --paper: #f7f8f5;
+      --line: #dce4df;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font: 17px/1.65 Arial, sans-serif;
+    }
+    header, main, footer {
+      width: min(1080px, calc(100% - 40px));
+      margin: auto;
+    }
+    header {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--line);
+    }
+    .name { font-weight: 700; letter-spacing: .02em; }
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 15px;
+    }
+    nav a:hover { color: var(--accent); }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.5fr .8fr;
+      gap: 56px;
+      align-items: center;
+      padding: 76px 0 66px;
+    }
+    .eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    h1 {
+      font: 500 clamp(40px, 6vw, 66px)/1.08 Georgia, serif;
+      margin: 14px 0 20px;
+    }
+    .intro { color: var(--muted); max-width: 650px; }
+    .portrait {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #e5ebe6;
+    }
+    section {
+      padding: 34px 0;
+      border-top: 1px solid var(--line);
+    }
+    h2 { font: 500 30px Georgia, serif; margin: 0 0 14px; }
+    .muted { color: var(--muted); max-width: 760px; }
+    .topics { color: var(--accent); }
+    footer {
+      padding: 26px 0 38px;
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid var(--line);
+    }
+    @media (max-width: 700px) {
+      header { align-items: flex-start; flex-direction: column; padding: 18px 0; gap: 10px; }
+      nav a { margin: 0 16px 0 0; }
+      .hero { grid-template-columns: 1fr; gap: 28px; padding: 48px 0; }
+      .portrait { max-width: 360px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="name">Dr. Manoj Pareek</div>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#writing">Writing</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <div class="eyebrow">Academic profile</div>
+        <h1>Manoj Pareek</h1>
+        <p class="intro">
+          Associate Professor at IIHMR University, Jaipur. My work and teaching
+          bring together finance, insurance and the questions that shape
+          healthcare.
+        </p>
+      </div>
+      <img class="portrait" src="manoj-pareek.png" alt="Portrait of Dr. Manoj Pareek">
+    </div>
+
+    <section id="about">
+      <h2>About</h2>
+      <p class="muted">
+        I teach and write about healthcare finance, health insurance and
+        financial analytics. Before moving into academia, I worked across
+        banking, consumer durables and insurance, including a senior role at
+        HDFC ERGO.
+      </p>
+    </section>
+
+    <section id="work">
+      <h2>Teaching &amp; research</h2>
+      <p class="muted">
+        My interests include how health systems are financed, how insurance
+        works in practice, and how financial analysis can help explain
+        decisions in healthcare.
+      </p>
+      <p class="topics">Healthcare finance · Insurance · Financial analytics</p>
+    </section>
+
+    <section id="writing">
+      <h2>Writing</h2>
+      <p class="muted">
+        I’ll share occasional notes and articles here on finance, insurance,
+        healthcare and teaching.
+      </p>
+    </section>
+  </main>
+
+  <footer>© 2026 Dr. Manoj Pareek</footer>
+</body>
+</html>
